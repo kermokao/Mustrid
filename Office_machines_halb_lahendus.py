@@ -17,7 +17,7 @@ class MultiFunctionPrinter(Machine):
         print("Test document")
 
     def scan(self, document):
-        raise NotImplementedError("Printer cannot scan")
+        print("scanned")
 
 
 class OldFashionedPrinter(Machine):

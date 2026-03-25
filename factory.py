@@ -14,7 +14,7 @@ class PersonFactory:
         else:
             person = Person(self.next_id, name)
             self.name_list.add(name)
-            self.next_id += 1
+            self.current_id += 1
             return person
         
 

@@ -14,7 +14,7 @@ class RealDiscriminantStrategy(DiscriminantStrategy):
     def calculate_discriminant(self, a, b, c):
         d = b**2 - 4*a*c
         if d < 0:
-            return float("Nan")
+            return float("nan")
 
 
 class QuadraticEquationSolver:
@@ -27,8 +27,8 @@ class QuadraticEquationSolver:
        sqrt_d = math.sqrt (d)
 
 
-       x1 = (b - sqrt_d) / (2 * a)
-       x2 = (b + sqrt_d) / (2 * a)
+       x1 = (-b - sqrt_d) / (2 * a)
+       x2 = (-b + sqrt_d) / (2 * a)
        
        return (x1, x2)
 

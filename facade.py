@@ -44,11 +44,12 @@ class Verifier:
 
 class MagicSquareGenerator:
     def generate(self, size):
+        generator = Generator()
         splitter = Splitter()
         verifier = Verifier()
 
         while True:
-            numbers = list(range(1, size * size + 1))
+            numbers = generator.generate(size * size)
             random.shuffle(numbers)
             matrix = [numbers[i * size:(i + 1) * size] for i in range(size)]
 
